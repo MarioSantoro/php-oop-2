@@ -1,4 +1,8 @@
 header {
-    background-color: darkslateblue;
+    background-color: #001632;
     padding: 2rem;
+}
+
+header img {
+    height: 50px;
 }
