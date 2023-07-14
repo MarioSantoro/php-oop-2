@@ -1,5 +1,6 @@
 <?php
-
+include_once __DIR__ . '/models/Categorie.php';
+include_once __DIR__ . '/models/Prodotti.php';
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +19,24 @@
 </head>
 
 <body>
+    <header>
+        <div class="navbar">
+            <img src="" alt="Logo">
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-body">
 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
