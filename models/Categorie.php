@@ -1,7 +1,7 @@
 <?php
 class Categorie
 {
-    protected $categoria;
+    public $categoria;
 
     function __construct(String $categoria)
     {

@@ -2,8 +2,8 @@
 include_once __DIR__ . '/Prodotti.php';
 class Cuccia extends Prodotti
 {
-    protected $grandezza;
-    protected $taglia_animale;
+    public $grandezza;
+    public $taglia_animale;
 
     function __construct(String $grandezza, String $taglia_animale, string $name, float $price, string $image,  Categorie $categoria)
     {

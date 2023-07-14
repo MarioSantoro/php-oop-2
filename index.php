@@ -1,6 +1,5 @@
 <?php
-include_once __DIR__ . '/models/Categorie.php';
-include_once __DIR__ . '/models/Prodotti.php';
+include_once __DIR__ . '/database/db.php';
 ?>
 
 <!DOCTYPE html>
@@ -27,14 +26,25 @@ include_once __DIR__ . '/models/Prodotti.php';
     <main>
         <div class="container">
             <div class="row">
-                <div class="col-3">
-                    <div class="card">
-                        <div class="card-body">
-
+                <?php foreach ($products as $item) { ?>
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><?php echo $item->name ?></h5>
+                                <p class="card-text">
+                                    <?php echo $item->price ?>
+                                </p>
+                                <p class="card-text">
+                                    <?php echo $item->tipo ?>
+                                </p>
+                                <a href="#" class="btn btn-primary">Acquista</a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                <?php } ?>
             </div>
+        </div>
         </div>
     </main>
 </body>

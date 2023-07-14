@@ -2,8 +2,8 @@
 include_once __DIR__ . '/Prodotti.php';
 class Gioco extends Prodotti
 {
-    protected $morbido;
-    protected $colore;
+    public $morbido;
+    public $colore;
 
     function __construct(bool $morbido, String $colore, string $name, float $price, string $image,  Categorie $categoria)
     {
